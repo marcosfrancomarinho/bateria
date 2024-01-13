@@ -36,7 +36,7 @@ function listenMusic() {
             sounds("Key" + upp)
         }
         i++
-    }, 200)
+    }, 300)
 }
 $(".card").forEach(elm => {
     elm.onclick = function () {
