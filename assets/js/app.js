@@ -38,3 +38,9 @@ function listenMusic() {
         i++
     }, 200)
 }
+$(".card").forEach(elm => {
+    elm.onclick = function () {
+        sounds(this.dataset.key)
+        $("#music").value += (this.innerText).toLowerCase()
+    }
+})
