@@ -82,7 +82,9 @@ main {
     font-size: 2em;
     width: 70%;
 }
-
+.play input::placeholder{
+    font-size: 0.8em;
+}
 .play button {
     border: none;
     padding: 10px;
