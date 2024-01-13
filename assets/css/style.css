@@ -1,0 +1,106 @@
+:root {
+    --seasalt: #f8f9faff;
+    --antiflash-white: #e9ecefff;
+    --platinum: #dee2e6ff;
+    --french-gray: #ced4daff;
+    --french-gray-2: #adb5bdff;
+    --slate-gray: #6c757dff;
+    --outer-space: #495057ff;
+    --onyx: #343a40ff;
+    --eerie-black: #212529ff;
+    --red: red;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+body {
+    height: 80%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 62.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--eerie-black);
+}
+
+header h1 {
+    font-size: 4.1em;
+    color: var(--seasalt);
+    margin: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.template-cards {
+    display: grid;
+    grid-template: auto auto auto/auto auto auto;
+    align-items: center;
+    justify-items: center;
+    gap: 15px;
+}
+
+.card {
+    font-size: 5em;
+    border: 3px solid var(--seasalt);
+    color: var(--seasalt);
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+}
+
+.play {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.play input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 2em;
+    width: 70%;
+}
+
+.play button {
+    border: none;
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 5px;
+    border: 1px solid var(--eerie-black);
+    transition: 0.6s all;
+}
+
+.play button:hover {
+    background-color: var(--eerie-black);
+    color: var(--seasalt);
+    border-color: var(--seasalt);
+}
+
+.press {
+    border-color: var(--red);
+}
